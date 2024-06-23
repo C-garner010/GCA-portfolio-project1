@@ -1,0 +1,303 @@
+/* You can add custom CSS and extend Bootstrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+
+.hero-image {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.7)),
+        url("img/pplmtnflowers.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 20%;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0 white);
+}
+
+.navbar {
+    position: fixed;
+    background-color:#746393;
+    border: none !important;
+    border-width:0!important;
+}
+
+.scroll-top .navbar {
+    background-color: transparent;
+}
+
+body {
+    background-color: #fafafa;
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 28px;
+    color:#3e0254;
+}
+
+.maincontainer {
+    background-color: white;
+    padding: 3%;
+}
+
+.card-body {
+    object-position: center;
+    background-color: #efedf3;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+}
+
+/* Why doesn't the centering of the object position for the card body center the cards in the middle of the mobile screen? There are a few obvious small things that I need to touch up with these cards, but they have eaten away at my patience while on vacation so I will bring them into help hub next week. */
+
+.card-header {
+    font-size: 18px;
+}
+
+.magic {
+    font-size: 64px;
+    color: #E6E8FA;
+    margin-bottom: 18px;
+}
+
+.hero-text {
+    color:#bcb3cc;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.button {
+    display: inline-block;
+    margin: 4px;
+}
+
+section#mission {
+    background-color:#efedf3;
+    margin: 11%;
+}
+
+section#skills {
+    background-color: #efedf3;
+    margin: 11%;
+}
+
+section#contact {
+    background-color: #efedf3;
+    margin: 11%;
+}
+
+
+#mission-target,
+#skills-target,
+#contact-target {
+    position: relative;
+    top: -100px;
+}
+
+.parallax1 {
+  background-image: url("img/sunoverscene.jpg");
+
+  min-height: 333px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("img/purpleflowers2.jpg");
+
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#headshot-photo{
+    background-image: url("img/headshot.jpeg");
+    margin: auto;
+    margin-top: 50%;
+    width: 188px;
+    height: auto;
+    border-radius: 50%; 
+    padding: 0;
+    filter: drop-shadow(0 0 0.75rem #3e0254);
+}
+
+#headshot-photo {
+    border: 3px !important;
+}
+
+#mission-photo {
+    display: inline-block;
+    float: left;
+    margin: auto;
+    margin-top: 0;
+    width: 188px;
+    height: auto;
+    border-radius: 33%;
+    padding: 0;
+    filter: drop-shadow(0 0 0.75rem #3e0254);
+}
+
+#cclogo {
+    display: inline-block;
+    width: 188px;
+}
+
+/* I can't figure out the middle break point - how to align everything/ center it. It looks nice on small screens and large screens, but the middle, in between sizes don't look the absolute best/ perfect as I would like them to be unfortunately.  */
+
+/* @cclogo (min-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .image {
+      width: 18%;
+    }
+    .text {
+      width: 100%;
+    }
+}
+
+@cclogo (max-width: 767px) {
+    .container {
+      display: block;
+    }
+    .image {
+      width: 18%;
+      margin-bottom: 20px;
+    }
+    .text {
+      width: 100%;
+    }
+  } */
+
+.container {
+    display: inline-block;
+    text-align: center !important;
+}
+
+.container1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.container3 {
+    display: block;
+    text-align: center;
+    color: #d7d1e0;
+    padding: 8px;
+    margin-top: 3%;
+}
+
+/* I don't know if this container ended up doing anything, what really worked was adding the margin at the top. I couldn't figure out how to get anything else to work. */
+
+.parallax4 {
+    background-image: url("img/purpleflowers.jpg");
+  
+    min-height: 333px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background-image: url("img/purplebee.jpg");
+  
+    min-height: 444px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-main {
+    background-color: #746393;
+    font-size: small;
+    color: #E6E8FA;
+    text-align: center;
+    padding: 3px;
+    padding-bottom: 6px;
+}
+
+a:link {
+    color:#38354b;
+    text-decoration: none;
+}
+
+a:visited {
+    color:#3c334c;
+}
+
+a:hover {
+    color:whitesmoke;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #3c334c 
+    color: #f2f0f5; 
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+.bi-linkedin:hover {
+    color:#bcb3cc;
+    margin-bottom: 333px;
+}
+
+.bi-instagram:hover {
+    color:#bcb3cc;
+    margin-bottom: 333px;
+}
+
+.bi-medium:hover {
+    color:#bcb3cc;
+    margin-bottom: 333px;
+}
+
+.bi-linkedin {
+    font-size: 28px;
+}
+
+.bi-instagram {
+    font-size: 28px;
+}
+
+.bi-medium {
+    font-size: 28px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}

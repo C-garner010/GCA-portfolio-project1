@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <meta name="milestone" content="Portfolio">
+    <title>Consciously Creating</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+
+    <!-- Custom styles (these can extend the default Bootstrap styles) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="scroll-top"
+        data-bs-spy="scroll"
+        data-bs-target=".navbar"
+        data-bs-offset="100">
+    <!-- TODO: Paste Navbar code and customize links -->  
+    <!-- This still isn't exactly where I would like it but I've finally made substantial progress that I am happy with! Over the rest of the summer, and during my exploration w this next part of the class, I will continue to add what I've learned and make sure I tailor it to match my site and needs. 
+    
+    Some of the things I will continue to work on when granted with more time and patience would be perfecting my nav bar, working on expanding my understanding and comprehension of the bootstrap grid system for responsive layout, and beginning to work on properly structuring link connections. -->
+    <section>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home"> 
+            <i class="bi bi-moon-stars"></i>
+            Consciously Dreaming</a>
+
+          <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#mission-target">Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-target">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-target">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Serendipitous Solitude</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  
+    <!-- Hero section -->
+    <div class="hero-image">
+  	    <section id="hero-section">
+            <h1 class="display-1">
+            Challenge your confidence <span class="hero-text">and consciously dream today</span>
+            </h1>
+            </section>
+  	    </section>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <div class="maincontainer">
+    
+      <!-- Mission/Meet-me section -->
+      <!-- I have finally figured out the base structuring format for these for-saken cards ohmylordy that took some TIME why did I make it so much harder than it actually was smh lol
+        
+      I would also like to figure out how to get the entire card body into the perfect center of the mobile version-->
+
+      <section id="mission-section">
+          <div id="mission-target"></div>
+              <h2>Mission Statement(s)</h2>
+              <p>Neurodiverse | Story Architect | Passionately Creative | Hopelessly Prolific </p>
+              <br />
+
+              <div class="row">
+                <div class="card-header col-span">
+                  The words of others tend to say it best.
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“Be yourself; everyone else is already taken.”</p>
+                          <footer class="blockquote-footer" cite>Oscar Wilde </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”</p>
+                          <footer class="blockquote-footer" cite>Maya Angelou </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”</p>
+                          <footer class="blockquote-footer" cite>Ralph Waldo Emerson </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.”</p>
+                          <footer class="blockquote-footer" cite>Dr. Seuss </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”</p>
+                          <footer class="blockquote-footer" cite>Albert Einstein </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.”</p>
+                          <footer class="blockquote-footer" cite>Neil Gaiman </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“I have not failed. I've just found 10,000 ways that won't work.”</p>
+                          <footer class="blockquote-footer" cite>Thomas A. Edison </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.”</p>
+                          <footer class="blockquote-footer" cite>Albert Einstein </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“Life isn't about finding yourself. Life is about creating yourself.” </p>
+                          <footer class="blockquote-footer" cite>George Bernard Shaw </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“What is done in love is done well” </p>
+                          <footer class="blockquote-footer" cite>Vincent Van Gogh </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>“It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all—in which case, you fail by default.” </p>
+                          <footer class="blockquote-footer" cite>J.K. Rowling </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+      </section>
+
+      <br />
+
+      <!-- I tried to get this image carousel to work multiple times and could not get the image to move off the first one in any instance. This was the closest I could get to without the photos blowing way out of proportion. I don't understand why it won't scroll, especially because I even went into inspect and console to see if it could find any errors, and they could not. 
+      
+      When I continue to add to this site, and refine the development throughout the rest of the summer, I will probably change the carousel to something else, but in the mean time this is all I could think to work with for now! -->
+
+      <section>
+        <div id="carouselCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/nl8.jpeg" class="d-block w-100" alt="personal long exposure photo of the northern lights">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Northern Lights!</h5>
+                <p>May 10, 2024</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/nl5.jpeg" class="d-block w-100" alt="personal long exposure photo of the northern lights">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>A Beautiful Reminder of How Small We All Really Are</h5>
+                <p>May 10, 2024</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/nl4.jpeg" class="d-block w-100" alt="personal long exposure photo of the northern lights">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>This felt like a split in the Universe</h5>
+                <p>May 10, 2024</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section> 
+
+      <br />
+
+      <div class="parallax1"></div>
+      
+      <br />
+    
+      <!-- Skills section -->
+      <section id="skills-section">
+          <div id="skills-target"></div>
+              <div class="container">
+                  <div class="magic">
+                      <i class="bi bi-stars">Skills</i><i class="bi bi-stars"></i>
+                  </div>
+                    <br />
+                      <p>As a junior in college pursuing a Bachelor's degree in Communication with an emphasis and certificate in Web Development and Design, I am passionate about consciously creating and bringing ideas to life! With a deep love for both the creative and technical aspects of web development, I strive to blend aesthetics and functionality to deliver exceptional user experiences.<br />
+                      Driven by my inherent curiosity and a desire to explore, I find joy in venturing into uncharted territories both mentally and physically. Whether it's diving into new technologies or embarking on outdoor adventures, I embrace challenges with enthusiasm and a hunger for growth.<br />
+                      Resilience, integrity, and dedication are at the core of my work ethic. I approach every project with unwavering commitment, ensuring that I deliver high-quality results that exceed expectations. I embrace setbacks as opportunities for learning and growth, constantly pushing myself to overcome obstacles and achieve my goals. I truly believe that slow is smooth, and smooth is fast.<br />
+                      Passion fuels my creativity. Believing in the power of authentic connections, I strive to create meaningful experiences through my work.<br />
+                      A desire to learn and grow are fundamental to my approach. I am constantly seeking to expand my understanding of the ever-evolving universe and work towards exponential development. </p>
+                      <br />
+                      <div class="container text-center">
+                        <div class="row text-center g-4">
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <i class="bi bi-filetype-html" style="font-size: 38px"></i>
+                            <p>Experienced in structuring and writing clean and semantic HTML code, I am skilled in complying with web standards and implementing best practices. I find joy in the puzzle of what I call my "tech-based marble run."</p>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <i class="bi bi-filetype-css" style="font-size: 38px"></i>
+                            <p>Creatively integrate design and functionality to focus on responsive and accessible web designs. I leverage my journalism design history and feel confident exploring unique and innovative concepts.</p>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <i class="bi bi-bootstrap" style="font-size: 38px"></i>
+                            <p>Proficient in utilizing, customizing, and extending Bootstrap framework and components for rapid and efficient development - creating responsive and visually appealing websites.</p>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-3">
+                            <i class="bi bi-book" style="font-size: 38px"></i>
+                            <p>As a curious and prolific writer with a keen eye for detail, I am establishing an ability to communicate complex technical concepts effectively as well as passionately innovate engaging and user-friendly content. </p>
+                          </div>
+                        </div>
+                      </div>
+                  <br />
+                  <div class="container1">
+                      <div class="button">
+                          <button class="btn btn-secondary">
+                              <i class="bi bi-stack-overflow"></i> Hopelessly Prolific
+                          </button>
+                      </div>
+                      <div class="button">
+                      <button class="btn btn-secondary">
+                          <i class="bi bi-signpost-split"></i> Challenging Confidence
+                      </button>
+                      </div>
+                      <div class="button">
+                      <button class="btn btn-secondary">
+                          <i class="bi bi-rocket-takeoff"></i> Consciously Dreaming
+                      </button>
+                      </div>
+                  </div>
+              </div>
+      </section> 
+
+      <!-- I don't know what these buttons are exactly. I like them. I wanted the practice. Eventually when I have a library of stuff, I can use these as links, but for now, they just make me laugh. -->
+
+      <br /> 
+
+      <div class="parallax2">
+        <div class="container1">
+          <img id="headshot-photo" border-radius="50%" src="img/headshot.jpeg" img alt="personal headshot">
+        </div>
+        <div class="container3">
+          <h1>Caiia G.</h1>
+          <p>Dreaming and Creating in Digital Spaces</p>
+        </div>
+      </div>
+
+      <!-- I don't fully understand how to perfectly center my headshot in the parallax for all screens - responsively. Well, it seems I may have it now, but we will see.   -->
+
+      <br /> 
+
+      <section id="mission-section">
+        <div id="mission-target"></div>
+          <div class="container text-center">
+            <h2>My Mission</h2>
+              <img src="img/consciouslydreaming.png" img alt="a person head, cut out, with colorful bubbles coming out of the brain to signify the logo, consciously dreaming" id="mission-photo">
+              <br />
+              <p>As an imaginative, coding, front-end web developer, my mission is to bridge the gap between design and effectiveness, creating aesthetically functional websites that go beyond just getting the job done. <br />
+              I strive to transform the online experience into a work of art, where every element is carefully crafted to delight and engage users. <br />
+              Passionate about creativity and writing, I bring a unique perspective to my work, infusing it with innovation and storytelling. Establishing a background in communications, web development,  design, and writing, I aim to connect with others globally by leveraging the power of the internet to create meaningful and impactful digital experiences.</p>
+          </div>
+        </div>
+      </section>
+
+      <br />
+
+      <div class="parallax4"></div>
+
+
+      <!-- Contact Section -->
+      <!-- This I will also obviously refine in phase two. But I would like to write a piece specifically for it I suppose. The occassion warrants. -->
+
+      <br />
+
+      <section id="contact-section">
+        <div id="contact-target"></div>
+          <div class="container text-center">
+            <h2>Contact Section</h2>
+            <br />
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-3">
+                <img img id="cclogo" src="img/challenging-confidence.png" img alt="the words `challenging confidence` in fancy script">
+              </div>
+              <br />
+              <div class="col-12 col-sm-6 col-lg-8">
+                <p>If you have come here looking for the name Callan, yes, that is also I! However, in my creative and professional pursuits, I tend to prefer the name Caiia! There is a ton more to be said, but we will leave that all for another time. <br />
+                Thank you for your time, energy, curiosity, and any questions you may have - I would love the opportunity to talk more if you would enjoy! <br />
+                Best wishes and warmest regards, I hope to hear from you soon!</p>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="col-sm-4">
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <div class="col-sm-4">
+                  <i class="bi bi-medium"></i>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <br />
+      <br />
+
+      <div class="parallax3"></div>
+
+      <!-- Footer section -->
+      <section id="footer-section">
+        <div class="footer-main">
+          <div class="footer-main">
+              <p><h3>&#169;C.G.</h3>2024</p>
+          </div>
+          <div class="footer-contact">
+                <p>Want to know more?
+                  <a href="mailto:definingdissonance@gmail.com">E-mail my writing account!</a></p>
+          </div>
+      </div>
+    
+      </section>
+    </div>
+
+
+
+
+    <!-- 
+  		TODO: Paste Bootstrap JavaScript script tag from:
+      https://getbootstrap.com/
+  	-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
